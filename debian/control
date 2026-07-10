@@ -1,4 +1,4 @@
-﻿Source: lingmo-icon-engine
+Source: lingmo-icon-engine
 Section: libs
 Priority: optional
 Maintainer: Lingmo OS Team <team@lingmo.org>
@@ -7,23 +7,18 @@ Build-Depends:
     debhelper-compat (= 13),
     pkg-config,
     qt6-base-dev (>= 6.5),
-    qt6-base-dev,
 Standards-Version: 4.6.2
 Homepage: https://github.com/Matrinsoft/lingmo-icon-engine
 Rules-Requires-Root: no
 
-Package: liblingmo-icon-engine1
+Package: liblingmoiconengine1
 Architecture: any
-Depends:
-    ,
-    ,
-Description: Lingmo Icon Engine
- Lingmo Desktop Lingmo Icon Engine.
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: lingmo-icon-engine
+ Lingmo Desktop lingmo-icon-engine.
 
-Package: liblingmo-icon-engine-dev
+Package: liblingmoiconengine-dev
 Architecture: any
-Depends:
-    liblingmo-icon-engine1 (= ),
-    ,
-Description: Lingmo Icon Engine - development files
+Depends: liblingmoiconengine1 (= ${binary:Version}), ${misc:Depends}
+Description: lingmo-icon-engine - development files
  This package contains the development files.
